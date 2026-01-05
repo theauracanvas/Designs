@@ -1,17 +1,20 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background: #fafafa;
   color: #333;
 }
 
 header {
-  background: rgba(0,0,0,0.6);
-  color: white;
-  padding: 20px;
   position: absolute;
   width: 100%;
   top: 0;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
+}
+
+nav {
+  text-align: center;
 }
 
 nav a {
@@ -22,17 +25,17 @@ nav a {
 }
 
 .hero {
-  background: url('../images/hero.jpg') center/cover no-repeat;
-  height: 85vh;
+  height: 90vh;
+  background: url('../images/2.jpeg') center/cover no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .hero h1 {
   color: white;
-  font-size: 36px;
+  font-size: 38px;
 }
 
 .hero p {
