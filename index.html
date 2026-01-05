@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Aura Canvas | Event Decor</title>
+<title>The Aura Canvas | Event Decoration & Celebrations</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -16,8 +16,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fff;
   color: #333;
+  background: #fff;
 }
 
 /* NAV */
@@ -25,18 +25,13 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: #fff;
+  background: #ffffffdd;
+  backdrop-filter: blur(8px);
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   z-index: 10;
-}
-
-nav h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
 }
 
 nav a {
@@ -48,109 +43,113 @@ nav a {
 
 /* HERO */
 .hero {
-  height: 90vh;
+  height: 100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    linear-gradient(135deg, rgba(255,107,129,0.85), rgba(255,195,113,0.85)),
     url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 0 8%;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
 }
 
-.hero-content {
-  max-width: 600px;
+.hero h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.8rem;
   color: #fff;
-}
-
-.hero h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
   margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #fff;
   margin-bottom: 30px;
 }
 
 .hero a {
-  background: #ff4d6d;
+  background: #25D366;
   color: #fff;
-  padding: 14px 32px;
-  border-radius: 30px;
+  padding: 14px 36px;
+  border-radius: 40px;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 /* SECTION */
 section {
-  padding: 80px 8%;
+  padding: 90px 8%;
 }
 
-section h3 {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
+section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-/* CATEGORY CARDS */
-.categories {
+section p.subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* SERVICES */
+.services {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
-.card {
+.service-card {
+  background: #fff;
   border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.card img {
+.service-card img {
   width: 100%;
-  height: 260px;
+  height: 220px;
   object-fit: cover;
 }
 
-.card div {
+.service-card div {
   padding: 20px;
-  text-align: center;
 }
 
-.card h4 {
-  font-size: 1.2rem;
+.service-card h3 {
   margin-bottom: 10px;
 }
 
 /* REVIEWS */
 .reviews {
-  background: #f9f9f9;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
 }
 
-.review-box {
-  max-width: 700px;
+.review {
+  max-width: 800px;
   margin: auto;
   text-align: center;
-}
-
-.review-box p {
   font-size: 1.1rem;
-  margin-bottom: 20px;
 }
 
 /* FOOTER */
 footer {
   background: #111;
-  color: #aaa;
+  color: #bbb;
   text-align: center;
   padding: 30px;
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2.2rem;
+  .hero h1 {
+    font-size: 2.8rem;
   }
 }
 </style>
@@ -159,62 +158,82 @@ footer {
 <body>
 
 <nav>
-  <h1>The Aura Canvas</h1>
+  <strong>The Aura Canvas</strong>
   <div>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="hero">
-  <div class="hero-content">
-    <h2>Celebrate Every Moment</h2>
-    <p>Birthday | Anniversary | Surprise Decor | Kids Party</p>
-    <a href="https://wa.me/919999999999">Book on WhatsApp</a>
+  <div>
+    <h1>The Aura Canvas</h1>
+    <p>Turning every celebration into a beautiful memory ✨</p>
+    <a href="https://wa.me/919711079638">Book on WhatsApp</a>
   </div>
 </div>
 
+<section id="about">
+  <h2>We Celebrate Every Occasion</h2>
+  <p class="subtitle">
+    From intimate surprises to grand celebrations, The Aura Canvas brings
+    creativity, color, and care to every event we design.
+  </p>
+</section>
+
 <section id="services">
-  <h3>Our Services</h3>
-  <div class="categories">
-    <div class="card">
+  <h2>Our Services</h2>
+  <p class="subtitle">
+    We organize and decorate all kinds of celebrations — big or small — with love and attention to detail.
+  </p>
+
+  <div class="services">
+    <div class="service-card">
       <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d">
-      <div><h4>Birthday Decorations</h4></div>
+      <div>
+        <h3>Birthday Decorations 🎉</h3>
+        <p>Theme-based birthday setups, balloon decorations, backdrops, cake tables and surprise birthday planning.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
-      <div><h4>Anniversary Setup</h4></div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-      <div><h4>Surprise Events</h4></div>
-    </div>
-    <div class="card">
+
+    <div class="service-card">
       <img src="https://images.unsplash.com/photo-1603570419968-4c5ab8f9f76a">
-      <div><h4>Kids Party Themes</h4></div>
+      <div>
+        <h3>Baby Welcome 👶</h3>
+        <p>Warm baby welcome decorations, pastel themes, name boards, and cozy home setups for newborn celebrations.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+      <div>
+        <h3>Anniversary & Surprises 💖</h3>
+        <p>Romantic anniversary decor, candlelight surprises, room decorations, and memorable surprise moments.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <div>
+        <h3>Any Celebration 🎊</h3>
+        <p>Festivals, house parties, proposals, congratulations setups — if it’s a celebration, we’ll create the vibe.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="reviews" id="reviews">
-  <h3>What Clients Say</h3>
-  <div class="review-box">
-    <p>⭐️⭐️⭐️⭐️⭐️ “Beautiful decoration and smooth coordination.”</p>
-    <p>⭐️⭐️⭐️⭐️⭐️ “They made our surprise truly special.”</p>
+  <h2>Happy Clients</h2>
+  <div class="review">
+    ⭐⭐⭐⭐⭐ <br><br>
+    “The decoration was beautiful and exactly what we imagined. Highly recommended!”<br><br>
+    “They turned our small celebration into something truly special.”
   </div>
 </section>
 
-<section id="contact">
-  <h3>Contact</h3>
-  <p style="text-align:center;">
-    📞 WhatsApp: +91 99999 99999<br>
-    📍 Available in your city
-  </p>
-</section>
-
 <footer>
-  © 2026 The Aura Canvas
+  © 2026 The Aura Canvas · Designed with ❤️ for celebrations
 </footer>
 
 </body>
